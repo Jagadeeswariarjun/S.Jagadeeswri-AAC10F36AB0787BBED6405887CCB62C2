@@ -1,0 +1,43 @@
+"" Implement a class callBankAccount that represent a bank accout The class should have private attributes for acciutvnumber. account liolder name. and account balance, Include mathods to depositt money, willxlrzw money and display tha accout balance.ensture that the account balance connot be accesaed direclly from outside the class,writing a program  to create an listance of the  BankAccout class and test the deposil and wullhadr owal fancilonally""
+
+
+class BankAccout
+
+def__intt__(self,account _number, account _holfer_name,inttal_balance=00):
+   self__account _number =account _number 
+   self__account _holder_name=account _holder_nam:
+   self__account _balance =inttak_balance 
+
+def deposit(self.amount) 
+   if amount >0 
+      self __account _balance +=amount 
+      #self__account_balance =self__accout_balance.amount 
+      print(*Depastted ₹[].new balance  ₹[]".fromat(amount,
+                                                      self__account _balance))
+   else:
+         print("Invalxl deposit amount ")
+def withdraw(self.amount) 
+  If amount >0 and amount <= self __account _balance:
+     self__account _balance -=amount 
+     #self__account _balance =self__account _balance _amount 
+     print(" withdraw ₹{}.new balance: ₹{}".format(amount, 
+                                                    self__account _balance))
+   else:
+       print("Invalid withdrawal amount or insufficient  balance  ")
+
+       def display _balance(self):
+          print(" Account balance for{}(Account#{}):₹{}".format(
+                self__account _holder_name,self__account _number, 
+                self__account _balance))
+
+       #create an instance of the BankAccount class:
+       account =Bank Account (account _number ="123456789",
+                                     account _holder_name="Shakira",
+                                     inittal_balance =5000.0
+
+       #Test deposit and withdrawal functionality 
+       account.display_balance ()
+       account.deposit(500.0)
+       account.withdraw(200.0)
+       account.withdraw(20000.0)
+       account.display_balance()
